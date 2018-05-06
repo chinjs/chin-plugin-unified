@@ -14,7 +14,7 @@ yarn add -D chin chin-plugin-unified
 
 ## Usage
 
-### `unified(extension, list | preset)`
+### `unified(extension, list|preset)`
 
 Just using [`processor.use()`](https://github.com/unifiedjs/unified#processoruseplugin-options).
 
@@ -26,7 +26,7 @@ import hastformat from 'rehype-format'
 import hast2html from 'rehype-stringify'
 
 // as list
-const ext = unified('.html', [
+const md = unified('.html', [
   [md2mdast, {}],
   [mdast2hast, {}],
   [hastformat, {}],
@@ -34,7 +34,7 @@ const ext = unified('.html', [
 ])
 
 // as preset
-const ext = unified('.html', {
+const md = unified('.html', {
   settings: {},
   plugins: [
     [md2mdast, {}],
@@ -45,7 +45,7 @@ const ext = unified('.html', {
 })
 ```
 
-### `unified(type, list | options)`
+### `unified(type, list|options)`
 
 Determines [parser/compiler](https://github.com/unifiedjs/unified#description)(/extension) by `type`.
 
@@ -55,13 +55,13 @@ import mdast2hast from 'remark-rehype'
 import hastformat from 'rehype-format'
 
 // as list
-const ext = unified('m2h', [
+const md = unified('m2h', [
   [mdast2hast, {}],
   [hastformat, {}]
 ])
 
 // as options
-const ext = unified('m2h', {
+const md = unified('m2h', {
   parse: {},
   compile: {},
   settings: {},
@@ -74,7 +74,7 @@ const ext = unified('m2h', {
 
 #### `type`
 
-|type|parser|compiler|required in `plugins`|
+|value|parser|compiler|required in `list`|
 |:-:|:-:|:-:|:-:|
 |`"h2h"`|`rehype-parser`|`rehype-stringify`||
 |`"h2m"`|`rehype-parser`|`remark-stringify`|`rehype-remark`|
@@ -82,6 +82,8 @@ const ext = unified('m2h', {
 |`"m2h"`|`remark-parser`|`rehype-stringify`|`remark-rehype`|
 
 #### options ( extends `preset` )
+- `setting`
+- `plugins` set to `list`
 - `parse` options passed to parser.
 - `compile` options passed to compiler.
 

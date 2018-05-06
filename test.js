@@ -1,5 +1,4 @@
 import assert from 'assert'
-import rewire from 'rewire'
 import { parse, resolve, extname } from 'path'
 import unified, { createUtil } from './index.js'
 import md2mdast from 'remark-parse'

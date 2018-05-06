@@ -1,6 +1,6 @@
 {
   "name": "chin-plugin-unified",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "https://github.com/kthjm/chin-plugin-unified",
   "author": "kthjm <toxictoxer@gmail.com>",
   "main": "index.js",
@@ -42,7 +42,6 @@
     "nyc": "^11.7.1",
     "power-assert": "^1.5.0",
     "rehype-remark": "^3.0.0",
-    "remark-rehype": "^3.0.0",
-    "rewire": "^4.0.1"
+    "remark-rehype": "^3.0.0"
   }
 }

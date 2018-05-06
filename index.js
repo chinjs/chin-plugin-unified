@@ -29,14 +29,9 @@ const createUtil = (indicate, opts) => {
   } else {
     asserts(typeMap[indicate], `chin-plugin-unified: ${indicate} is invalid first argument.`)
     const { parser, compiler, ext: _ext } = typeMap[indicate]
-    const { parse, compile, plugins, settings } = !opts ? {} : Array.isArray(opts) ? { plugins: opts } : opts
-
+    const { parse, compile, plugins, settings } = Array.isArray(opts) ? { plugins: opts } : opts || {}
     ext = _ext
-    processor = processor
-    .use({ settings })
-    .use(parser, parse)
-    .use(plugins)
-    .use(compiler, compile)
+    processor = processor.use(parser, parse).use({ settings, plugins }).use(compiler, compile)
   }
 
   return { processor, ext }
