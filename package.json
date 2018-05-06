@@ -1,0 +1,52 @@
+{
+  "name": "chin-plugin-unified",
+  "version": "0.0.1",
+  "repository": "https://github.com/kthjm/chin-plugin-unified",
+  "author": "kthjm <toxictoxer@gmail.com>",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Chin plugin using unified.",
+  "keywords": [
+    "chin",
+    "chin-plugin",
+    "unified",
+    "rehype",
+    "retext",
+    "remark"
+  ],
+  "nyc": {
+    "sourceMap": false,
+    "instrument": false,
+    "require": [
+      "babel-register"
+    ]
+  },
+  "scripts": {
+    "ex": "cross-env BABEL_ENV=EXAMPLE chin -c .example -r babel-register",
+    "test": "cross-env BABEL_ENV=TEST nyc mocha",
+    "coverage": "nyc report --reporter=lcov && codecov"
+  },
+  "dependencies": {
+    "rehype": "^5.0.1",
+    "remark": "^9.0.0",
+    "retext": "^5.0.0",
+    "unified": "^6.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-istanbul": "^4.1.6",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-power-assert": "^2.0.0",
+    "chin": "^3.0.4",
+    "codecov": "^3.0.1",
+    "cross-env": "^5.1.4",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.1",
+    "power-assert": "^1.5.0",
+    "rehype-remark": "^3.0.0",
+    "rehype-retext": "^2.0.1",
+    "remark-rehype": "^3.0.0",
+    "remark-retext": "^3.1.0",
+    "rewire": "^4.0.1"
+  }
+}
