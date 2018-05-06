@@ -14,7 +14,7 @@ yarn add -D chin chin-plugin-unified
 
 ## Usage
 
-### 1. unified(extension, list | preset)
+### `unified(extension, list | preset)`
 
 Just using [`processor.use()`](https://github.com/unifiedjs/unified#processoruseplugin-options).
 
@@ -45,7 +45,7 @@ const ext = unified('.html', {
 })
 ```
 
-### 2. unified(type, list | options)
+### `unified(type, list | options)`
 
 Determines [parser/compiler](https://github.com/unifiedjs/unified#description)(/extension) by `type`.
 
@@ -81,7 +81,7 @@ const ext = unified('m2h', {
 |`"m2m"`|`remark-parser`|`remark-stringify`||
 |`"m2h"`|`remark-parser`|`rehype-stringify`|`remark-rehype`|
 
-#### options ( extends preset )
+#### options ( extends `preset` )
 - `parse` options passed to parser.
 - `compile` options passed to compiler.
 
