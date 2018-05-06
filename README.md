@@ -16,7 +16,7 @@ yarn add -D chin chin-plugin-unified
 
 ### 1. unified(extension, list | preset)
 
-Using [`processor.use()`](https://github.com/unifiedjs/unified#processoruseplugin-options) directly that require [parser and compiler](https://github.com/unifiedjs/unified#description) in `plugins`.
+Just using [`processor.use()`](https://github.com/unifiedjs/unified#processoruseplugin-options).
 
 ```js
 import unified from 'chin-plugin-unified'
@@ -45,9 +45,9 @@ const ext = unified('.html', {
 })
 ```
 
-### 2. unified(type[, list | options])
+### 2. unified(type, list | options)
 
-Determines parser/compiler(/extension) by `type`.
+Determines [parser/compiler](https://github.com/unifiedjs/unified#description)(/extension) by `type`.
 
 ```js
 import unified from 'chin-plugin-unified'
@@ -82,24 +82,17 @@ const ext = unified('m2h', {
 |`"m2h"`|`remark-parser`|`rehype-stringify`|`remark-rehype`|
 
 #### options ( extends preset )
-
 - `parse` options passed to parser.
-
 - `compile` options passed to compiler.
 
 <!-- - `plugins` transformers as plugin | list | preset. -->
 
 #### reference
 - [`rehype-parser`](https://github.com/rehypejs/rehype/tree/master/packages/rehype-parse)
-
 - [`rehype-stringify`](https://github.com/rehypejs/rehype/tree/master/packages/rehype-stringify)
-
 - [`remark-parser`](https://github.com/remarkjs/remark/tree/master/packages/remark-parse)
-
 - [`remark-stringify`](https://github.com/remarkjs/remark/tree/master/packages/remark-stringify)
-
 - [`rehype-remark`](https://github.com/rehypejs/rehype-remark)
-
 - [`remark-rehype`](https://github.com/remarkjs/remark-rehype)
 
 ## License
