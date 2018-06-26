@@ -12,7 +12,7 @@ deploy:
   email: toxictoxer@gmail.com
   on:
     tags: true
-    repo: kthjm/chin-plugin-unified
+    repo: chinjs/chin-plugin-unified
     branch: publish
   api_key:
     secure: vAtAuhfSNUi1tNbRjfKjy2g3uivlZARBBhLkovKn09UF5XTq/NuMFv0CpGk6y/exO+0pfJaEazTR0atWnnytlG2N34D+QZwnwXqptc4JQrA92vJNBak+iGiIs8+OCwpxuNsTB940KJcrWXKrRhR8+GjE2TB/ITo89NiW7adGP4b8Q48lRgqoPgtQ53FNAX/g5dq+Itoz5fY0uCX+2PZ0nShJIjgF0UhpDEAaSr8h0EOEMdekzw1eHl+UMsjYrG5JIbEaR9rOu8KyxzTWbQArVX9ztFF5QDUb67FZ7VAAI93QG7mKl74pMwBK/PQ4Dd4N5moLj4wJmmkOJbofkyRQ1cJHWS88+VlTlNOyh1ubCgku8Wj4IqSX0S5VLNAfgfUteZeQPjGJ+wNYs7mX1WiFxRgWsqn65uMiM/vVGvsHBCdTZR7ioF6xpkqkNWVyunV1K+k+GaIVv0VQnWImG5MHYQgiGSnq5v+b3qU8nojJJiJ6RPTt9uTYCvXNf2UDOEr3ZxVEcaM49p0WdR2ZeW8ElR45yFfaB7SImFcAbLduVHoWOluF+QtIfEWCimi8zJyBhzV2xQHATrA4qheW4MDDYSMBuvqQlSntt7RKd02Pol7Pn5ezdOQsfGvqarhXxrN4MEHw4fPIzUDLa9e/uyW2mu4lEwSx0xBtK12s0BTubDE=

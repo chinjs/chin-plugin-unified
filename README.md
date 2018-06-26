@@ -1,11 +1,11 @@
 # chin-plugin-unified
 
-[![npm](https://img.shields.io/npm/v/chin-plugin-unified.svg?style=flat-square)](https://www.npmjs.com/package/chin-plugin-unified)
-[![npm](https://img.shields.io/npm/dm/chin-plugin-unified.svg?style=flat-square)](https://www.npmjs.com/package/chin-plugin-unified)
-[![Build Status](https://img.shields.io/travis/kthjm/chin-plugin-unified.svg?style=flat-square)](https://travis-ci.org/kthjm/chin-plugin-unified)
-[![Coverage Status](https://img.shields.io/codecov/c/github/kthjm/chin-plugin-unified.svg?style=flat-square)](https://codecov.io/github/kthjm/chin-plugin-unified)
+[![npm](https://img.shields.io/npm/v/chin-plugin-unified.svg?longCache=true&style=flat-square)](https://www.npmjs.com/package/chin-plugin-unified)
+[![npm](https://img.shields.io/npm/dm/chin-plugin-unified.svg?longCache=true&style=flat-square)](https://www.npmjs.com/package/chin-plugin-unified)
+[![Build Status](https://img.shields.io/travis/chinjs/chin-plugin-unified.svg?longCache=true&style=flat-square)](https://travis-ci.org/chinjs/chin-plugin-unified)
+[![Coverage Status](https://img.shields.io/codecov/c/github/chinjs/chin-plugin-unified.svg?longCache=true&style=flat-square)](https://codecov.io/github/chinjs/chin-plugin-unified)
 
-[chin](https://github.com/kthjm/chin) plugin using [unified](https://github.com/unifiedjs/unified).
+[chin](https://github.com/chinjs/chin) plugin using [unified](https://github.com/unifiedjs/unified).
 
 ## Installation
 ```shell
